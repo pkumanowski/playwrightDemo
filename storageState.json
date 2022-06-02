@@ -3,7 +3,7 @@
     {
       "sameSite": "Lax",
       "name": "user",
-      "value": "3e8f3b33-710d-a648-df15-cc15a5c5d5e1",
+      "value": "8fae4636-bae2-bde5-6058-dbf5e247a796",
       "domain": "www.demoblaze.com",
       "path": "/",
       "expires": -1,
@@ -13,7 +13,7 @@
     {
       "sameSite": "Lax",
       "name": "tokenp_",
-      "value": "a29idWx1MTY1NDcxOQ==",
+      "value": "a29idWx1MTY1NDgwMA==",
       "domain": "www.demoblaze.com",
       "path": "/",
       "expires": -1,
