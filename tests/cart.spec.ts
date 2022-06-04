@@ -24,6 +24,8 @@ test.use( {storageState: 'storageState.json'})
     page.waitForNavigation(/*{ url: 'https://demoblaze.com/cart.html#' }*/),
     page.locator('text=Delete').click()
   ]);
+  await expect(page.locator('[id="nameofuser"]', {hasText: 'Welcome kobulu'})).
+  toBeVisible()
   // Click #page-wrapper
   await expect(page.locator('[id="tbodyid"]')).toBeEmpty()
   });
