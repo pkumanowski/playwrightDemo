@@ -1,6 +1,9 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('cart tests', () => {
+
+test.use( {storageState: 'storageState.json'})
+
   test('add to cart', async ({ page }) => {
   await page.goto('https://www.demoblaze.com/index.html');
   // Click a:has-text("Samsung galaxy s6")

@@ -15,8 +15,10 @@ test.describe('Login test', () => {
       await  page.locator('[id="signin2"]').click({force: true})
       await expect(page.locator('[id="signInModalLabel"]')).toBeVisible()
       await page.locator('[id="sign-username"]').type(name)
-      await page.locator('[id="sign-password"]').type(password)
+      await page.locator('[id="sign-password"]').type(password, {delay: 50})
       await page.locator('[onclick="register()"]').click()
+      page.on('dialog', dialog => dialog.accept());
+      await expect(page.locator('[id="tbodyid"]')).toBeVisible();
   });
   test('login', async ({ page }) => {
       await page.locator('[data-target="#logInModal"]').click()
