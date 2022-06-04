@@ -20,7 +20,7 @@ test.describe('Login test', () => {
       page.on('dialog', dialog => dialog.accept());
       await expect(page.locator('[id="tbodyid"]')).toBeVisible();
   });
-  test('login', async ({ page }) => {
+  test('zlogin', async ({ page }) => {
       await page.locator('[data-target="#logInModal"]').click()
       await expect(page.locator('[id="logInModalLabel"]')).toBeVisible()
       await page.locator('[id="loginusername"]').type(name)
